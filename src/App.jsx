@@ -3,7 +3,7 @@ import Navbar from './components/Navbar'
 
 const App = () => {
   return (
-    <div className='px-10 h-screen bg-gray-100 '>
+    <div className='px-10 h-screen bg-gray-300 '>
       <Navbar/>
     </div>
   )
