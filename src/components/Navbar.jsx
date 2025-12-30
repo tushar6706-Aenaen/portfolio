@@ -13,7 +13,7 @@ const main = {
 const logoVariants = {
     hidden: {
         opacity: 0,
-        y: -20
+        y: -50
 
     },
     show: {
@@ -36,7 +36,7 @@ const navContainer = {
         transition: {
             duration: 1,
             staggerChildren: 0.15,
-            delayChildren: 0.1,
+            delayChildren: 0.05,
         },
     },
 };
@@ -44,7 +44,7 @@ const navContainer = {
 const navItem = {
     hidden: {
         opacity: 0,
-        y: -20
+        y: -50
     },
     show: {
         opacity: 1,
@@ -96,7 +96,7 @@ const Navbar = () => {
             {/* nav items */}
             <motion.div
                 variants={navContainer}
-                className='flex gap-5 items-center text-xl'
+                className='md:flex hidden gap-5 items-center text-xl'
             >
 
 
