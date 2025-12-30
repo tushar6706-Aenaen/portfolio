@@ -49,10 +49,13 @@ const Home = () => {
             variants={main}
             initial="hidden"
             animate="show"
-            className='grid h-[calc(100vh - 80px)] grid-cols-1 md:grid-cols-2 p-5'>
+            className='grid  min-h-[calc(100vh-80px)] grid-cols-1 md:grid-cols-2'>
             <motion.div
                 variants={textVariants}
-                className='textContentMain flex flex-col justify-center space-y-1.5'>
+                className='textContentMain h-[500px] md:h-auto  flex flex-col justify-center space-y-1.5'>
+                
+
+                
                 <motion.div
                     variants={textVariants}
                     className='text-7xl font-bold'>
@@ -76,7 +79,7 @@ const Home = () => {
             </motion.div>
             <motion.div
                 variants={object3D}
-                className='md:w-[650px] bg-gray-200 h-[300px]  md:h-[500px]'><Scene /></motion.div>
+                className='md:w-[650px]  bg-[#f7f7f7] h-[300px]  md:h-[500px]'><Scene /></motion.div>
         </motion.div>
     )
 }
