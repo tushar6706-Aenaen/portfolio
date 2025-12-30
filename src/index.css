@@ -1,0 +1,9 @@
+@import "tailwindcss";
+
+.navbar{
+   font-family: "Bebas Neue", sans-serif;
+   /* font-family: "rubik", sans-serif; */
+   
+  font-weight: 600;
+  font-style: normal;
+}
