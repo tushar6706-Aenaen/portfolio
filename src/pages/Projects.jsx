@@ -16,7 +16,7 @@ const Projects = () => {
                     transition={{ duration: 0.6, delay: 0.2 }}
                      className="flex items-center justify-center border-y-2 border-black">
                     
-                        <h2 className="font-[Bebas_Neue] text-9xl font-extrabold">Project-FEATURED </h2>
+                        <h2 className="font-[Bebas_Neue] text-6xl md:text-9xl font-extrabold">Project-FEATURED </h2>
                    
                 </motion.div>
                 <motion.div

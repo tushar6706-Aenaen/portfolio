@@ -80,7 +80,7 @@ const Home = () => {
             </motion.div>
             <motion.div
                 variants={object3D}
-                className='md:w-162.5  bg-[#dfdfdf] h-75  md:h-125'><Scene /></motion.div>
+                className='md:w-162.5 w-full  bg-[#dfdfdf] h-75  md:h-125'><Scene /></motion.div>
         </motion.div>
     )
 }
