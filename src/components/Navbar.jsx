@@ -29,9 +29,11 @@ const logoVariants = {
 const navContainer = {
     hidden: {
         opacity: 0,
+        
     },
     show: {
         opacity: 1,
+        
         transition: {
             duration: 1,
             staggerChildren: 0.15,
@@ -43,13 +45,13 @@ const navContainer = {
 const navItem = {
     hidden: {
         opacity: 0,
-        y: -50
+        y: -50, 
     },
     show: {
         opacity: 1,
         y: 0,
         transition: {
-            duration: 0.2,
+            duration: 0.5,
             ease: "easeOut",
         }
     },
@@ -104,10 +106,10 @@ const Navbar = () => {
     const [showSocials, setShowSocials] = useState(false);
     
     const list = [
-        'Home',
-        'Projects',
-        'About',
-        'Socials',
+        {name:'Home',id:'#home'},
+        {name:'Projects',id:'#projects'},
+        {name:'About',id:'#about'},
+        {name:'Socials',id:'#socials'},
     ]
 
     const socials = [
@@ -121,7 +123,7 @@ const Navbar = () => {
             variants={main}
             initial="hidden"
             animate="show"
-            className='h-20 p-4 navbar flex justify-between items-center border-gray-300'
+            className='h-20  px-10  fixed top-0 left-0 right-0 z-10 backdrop-blur-sm navbar flex justify-between items-center '
         >
             {/* logo */}
             <motion.div
@@ -137,18 +139,19 @@ const Navbar = () => {
                 className='md:flex hidden gap-5 items-center text-xl relative'
             >
                 {list.map((item) => (
-                    <div key={item} className="relative">
+                    <div key={item.id} className="relative">
                         <motion.span
                             variants={navItem}
+                            
                             className='hover:border-b-4 transition-all duration-200 capitalize cursor-pointer pb-1'
-                            onMouseEnter={() => item === 'Socials' && setShowSocials(true)}
-                            onMouseLeave={() => item === 'Socials' && setShowSocials(false)}
+                            onMouseEnter={() => item.name === 'Socials' && setShowSocials(true)}
+                            onMouseLeave={() => item.name === 'Socials' && setShowSocials(false)}
                         >
-                            {item}
+                            {item.name}
                         </motion.span>
 
                         {/* Dropdown for Socials */}
-                        {item === 'Socials' && (
+                        {item.name === 'Socials' && (
                             <AnimatePresence>
                                 {showSocials && (
                                     <motion.div

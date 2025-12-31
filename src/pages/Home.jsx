@@ -50,7 +50,7 @@ const Home = () => {
             initial="hidden"
             animate="show"
             id="home"
-            className=' flex flex-col min-h-[calc(100vh-80px)] md:flex-row justify-between items-center md:space-x-10 lg:space-x-20 pt-10 pb-20'>
+            className=' flex w-full px-10 flex-col min-h-screen md:flex-row justify-between items-center md:space-x-10 lg:space-x-20 pt-10 pb-20'>
             <motion.div
                 variants={textVariants}
                 className='textContentMain font-[Bebas_Neue]  h-125 md:h-auto  flex flex-col justify-center space-y-5'>
@@ -59,28 +59,28 @@ const Home = () => {
                 
                 <motion.div
                     variants={textVariants}
-                    className='text-7xl font-bold'>
+                    className='text-6xl md:text-7xl font-bold'>
                     Full-stack developer
                 </motion.div>
                 <motion.div
                     initial={{ opacity: 0, y: -40 }}
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.7, ease: "easeOut" }} 
-                    className='text-7xl font-bold'>
+                    className='text-6xl md:text-7xl font-bold'>
                     shaping modern
                 </motion.div>
                 <motion.div
                     initial={{ opacity: 0, y: -60 }}
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.7, ease: "easeOut" }}
-                    className='text-7xl font-bold'>
+                    className=' text-6xl md:text-7xl font-bold'>
                     web experiences.
                 </motion.div>
                 
             </motion.div>
             <motion.div
                 variants={object3D}
-                className='md:w-162.5  bg-[#f7f7f7] h-75  md:h-125'><Scene /></motion.div>
+                className='md:w-162.5  bg-[#dfdfdf] h-75  md:h-125'><Scene /></motion.div>
         </motion.div>
     )
 }
