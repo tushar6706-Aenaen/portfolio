@@ -5,7 +5,7 @@ import Layout from './components/Layout'
 
 const App = () => {
   return (
-    <div className='px-10 h-auto bg-[#f7f7f7] '>
+    <div className='px-10 h-auto bg-[#f7f7f7] overflow-hidden '>
       <Layout/>
     </div>
   )

@@ -49,10 +49,11 @@ const Home = () => {
             variants={main}
             initial="hidden"
             animate="show"
-            className='grid  min-h-[calc(100vh-80px)] grid-cols-1 md:grid-cols-2'>
+            id="home"
+            className=' flex flex-col min-h-[calc(100vh-80px)] md:flex-row justify-between items-center md:space-x-10 lg:space-x-20 pt-10 pb-20'>
             <motion.div
                 variants={textVariants}
-                className='textContentMain h-[500px] md:h-auto  flex flex-col justify-center space-y-1.5'>
+                className='textContentMain font-[Bebas_Neue]  h-125 md:h-auto  flex flex-col justify-center space-y-5'>
                 
 
                 
@@ -79,7 +80,7 @@ const Home = () => {
             </motion.div>
             <motion.div
                 variants={object3D}
-                className='md:w-[650px]  bg-[#f7f7f7] h-[300px]  md:h-[500px]'><Scene /></motion.div>
+                className='md:w-162.5  bg-[#f7f7f7] h-75  md:h-125'><Scene /></motion.div>
         </motion.div>
     )
 }
