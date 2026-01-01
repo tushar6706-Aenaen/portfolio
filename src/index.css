@@ -1,5 +1,9 @@
 @import "tailwindcss";
 
+html {
+  scroll-behavior: smooth;
+}
+
 .navbar{
    font-family: "Bebas Neue", sans-serif;
    /* font-family: "rubik", sans-serif; */

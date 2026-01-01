@@ -199,7 +199,7 @@ const Services = () => {
                                                     initial={{ opacity: 0, y: 15 }}
                                                     animate={{ opacity: 1, y: 0 }}
                                                     transition={{ duration: 0.5, delay: 0.15 }}
-                                                    className="text-lg sm:text-xl md:text-2xl text-gray-700 leading-relaxed max-w-4xl font-light"
+                                                    className="text-md  md:text-2xl text-gray-700 leading-relaxed max-w-4xl font-light"
                                                     style={{ lineHeight: '1.6' }}
                                                 >
                                                     {service.description}

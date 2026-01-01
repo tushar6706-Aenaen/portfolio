@@ -112,7 +112,7 @@ const AboutMe = () => {
                     </motion.div>
 
                     {/* Right Side - Content */}
-                    <div className="relative flex flex-col justify-center pl-8 md:pl-12 md:col-span-2">
+                    <div className="relative flex flex-col justify-center pl-5 md:pl-12 md:col-span-2">
                         {/* Title with top border */}
                         <motion.div
                             initial={{ opacity: 0, y: -50 ,filter: "blur(15px)"}}
@@ -130,7 +130,7 @@ const AboutMe = () => {
                             whileInView={{ opacity: 1, y: 0 , filter: "blur(0px)"}}
                             viewport={{ once: true, amount: 0.3 }}
                             transition={{ duration: 0.8, delay: 0.2 }}
-                            className="space-y-6 pr-5 text-base md:text-lg leading-relaxed text-gray-900"
+                            className="space-y-6 pr-5  text-[14px] md:text-lg leading-relaxed text-gray-900"
                         >
                             <p>
                                I’m a passionate full-stack web developer with a strong focus on building modern, responsive, and user-friendly applications. I enjoy turning ideas into real, functional products by combining clean UI design with solid backend logic. I’m especially interested in understanding how things work under the hood, which is why I prefer building features step-by-step rather than relying entirely on automation.
