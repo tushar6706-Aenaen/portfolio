@@ -2,27 +2,41 @@ import Home from "../pages/Home"
 import Projects from "../pages/Projects"
 import EmailB from "./EmailB"
 import Navbar from "./Navbar"
-import {motion} from 'framer-motion'
+import { motion } from 'framer-motion'
 
 const navbarMotion = {
-    hidden :{
+    hidden: {
         opacity: 0,
     },
-    show :{
+    show: {
         opacity: 1,
-        transition:{
+        transition: {
             duration: 0.5,
         },
     }
 }
 
 const HomeMotion = {
-    hidden :{
+    hidden: {
         opacity: 0,
     },
-    show :{
+    show: {
         opacity: 1,
-        transition:{
+        transition: {
+            delay: 1, // Wait for navbar animations to complete
+            duration: 1,
+        },
+    }
+}
+const Email = {
+    hidden: {
+        opacity: 0,
+        
+    },
+    show: {
+        opacity: 1,
+        
+        transition: {
             delay: 1, // Wait for navbar animations to complete
             duration: 1,
         },
@@ -32,14 +46,21 @@ const HomeMotion = {
 const Layout = () => {
     return (
         <div>
-            <motion.div 
+            <motion.div
                 variants={navbarMotion}
                 initial="hidden"
                 animate="show"
             >
                 <Navbar />
             </motion.div>
-            <EmailB/>
+            <motion.div
+                variants={Email}
+                initial="hidden"
+                animate="show"
+            >
+                <EmailB />
+            </motion.div>
+
             <motion.div
                 variants={HomeMotion}
                 initial="hidden"
@@ -47,7 +68,7 @@ const Layout = () => {
             >
                 <Home />
             </motion.div>
-            <Projects/>
+            <Projects />
         </div>
     )
 }
