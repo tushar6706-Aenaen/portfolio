@@ -6,7 +6,7 @@ import CursorBlack from './components/CursorBlack'
 
 const App = () => {
   return (
-    <div className=' h-auto bg-[#dfdfdf] overflow-hidden '>
+    <div className=' h-auto bg-[#dfdfdf] overflow-hidden pb-50'>
        <div className='hidden md:block'>
         <CursorBlack />
        </div>
