@@ -1,3 +1,4 @@
+import AboutMe from "../pages/AboutMe"
 import Home from "../pages/Home"
 import Projects from "../pages/Projects"
 import Services from "../pages/Services"
@@ -71,6 +72,7 @@ const Layout = () => {
             </motion.div>
             <Projects />
             <Services />
+            <AboutMe/>
         </div>
     )
 }

@@ -99,7 +99,7 @@ const Services = () => {
     };
 
     return (
-        <section className="min-h-screen bg-[#dfdfdf] py-10 md:py-15 px-6 md:px-12 lg:px-20">
+        <section className="min-h-200 bg-[#dfdfdf] py-0 md:py-15 px-6 md:px-12 lg:px-20">
             <div className=" ">
                 {/* Header */}
                 <motion.div

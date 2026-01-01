@@ -164,7 +164,7 @@ const Projects = () => {
                         <motion.div
                             variants={imageVariants}
                             transition={{ duration: 0.4, ease: "easeOut" }}
-                            className={`relative group overflow-hidden rounded-xl md:rounded-2xl shadow-xl md:shadow-2xl order-1 ${
+                            className={`relative project-img border-8 border-gray-500 group overflow-hidden rounded-xl md:rounded-2xl shadow-xl md:shadow-2xl order-1 ${
                                 project.imagePosition === 'right' ? 'lg:order-2' : 'lg:order-1'
                             }`}
                             style={{
@@ -173,11 +173,11 @@ const Projects = () => {
 
                             <motion.div
                                 transition={{ duration: 0.6, ease: "easeOut" }}
-                                className='overflow-hidden aspect-video md:aspect-auto md:h-full'>
+                                className='overflow-hidden  aspect-video md:aspect-auto md:h-full'>
                                 <img
                                     src={project.image}
                                     alt={project.name}
-                                    className='w-full h-full object-cover'
+                                    className='w-full  h-full object-cover'
                                 />
                             </motion.div>
                         </motion.div>

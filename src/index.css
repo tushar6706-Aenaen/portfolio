@@ -13,14 +13,21 @@
 }
 
 
-.fintrack-img-bg{
-  box-shadow: 15px 15px 1px rgb(0, 0, 0);
+.project-img{
+  box-shadow: 15px 15px 5px rgb(0, 0, 0);
 }
-.fintrack-img-bg:hover{
+.project-img:hover{
+  box-shadow: 15px 15px 12px rgb(0, 0, 0);
+  transition:  box-shadow 0.3s ease-in-out;
+}
+.boruto-img{
+  box-shadow: 15px 10px 1px rgb(0, 0, 0);
+
+}
+.boruto-img:hover{
   box-shadow: 15px 15px 15px rgb(0, 0, 0);
   transition:  box-shadow 0.3s ease-in-out;
 }
-
 .connection-text{
   font-family: "Josefin Sans" , sans-serif;
 
