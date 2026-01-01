@@ -192,7 +192,7 @@ const Services = () => {
                                         variants={contentVariants}
                                         className="overflow-hidden"
                                     >
-                                        <div className="pb-10 md:pb-12">
+                                        <div className="pb-10  md:pb-12">
                                             <div className="pl-0 md:pl-24 lg:pl-32 space-y-6 md:space-y-8 pr-0 md:pr-16">
                                                 {/* Description */}
                                                 <motion.p
