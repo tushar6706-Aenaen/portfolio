@@ -88,19 +88,19 @@ const statVariants = {
 
 const AboutMe = () => {
     return (
-        <section id="about" className="h-screen bg-[#dfdfdf] flex items-center">
-            <div className="max-w-[1400px] mx-auto px-6 md:px-12 w-full">
+        <section id="about" className="min-h-screen bg-[#dfdfdf] flex items-center py-16 md:py-20">
+            <div className="max-w-[1400px] mx-auto px-4 sm:px-6 md:px-12 w-full">
                 {/* Main Grid */}
-                <div className="grid grid-cols-1 md:grid-cols-3 gap-0 h-full items-center">
+                <div className="grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-0 items-center">
                     {/* Left Side - Image with vertical border */}
                     <motion.div 
                         initial={{ opacity: 0, y: -80 ,filter: "blur(15px)"}}
                         whileInView={{ opacity: 1, y: 0 , filter: "blur(0px)"}}
                         viewport={{ once: true, amount: 0.3 }}
                         transition={{ duration: 0.8 }}
-                        className="relative flex items-center justify-center border-r-2 border-black pr-8 md:pr-12"
+                        className="relative flex items-center justify-center md:border-r-2 border-black pr-0 md:pr-12"
                     >
-                        <div className="w-full max-w-xs">
+                        <div className="w-full max-w-xs sm:max-w-sm">
                             <div className="bg-black boruto-img shadow-2xl overflow-hidden">
                                 <img
                                     src={boruto}
@@ -112,16 +112,16 @@ const AboutMe = () => {
                     </motion.div>
 
                     {/* Right Side - Content */}
-                    <div className="relative flex flex-col justify-center pl-5 md:pl-12 md:col-span-2">
+                    <div className="relative flex flex-col justify-center pl-0 md:pl-12 md:col-span-2">
                         {/* Title with top border */}
                         <motion.div
                             initial={{ opacity: 0, y: -50 ,filter: "blur(15px)"}}
                             whileInView={{ opacity: 1, y: 0 , filter: "blur(0px)"}}
                             viewport={{ once: true, amount: 0.3 }}
                             transition={{ duration: 0.8 }}
-                            className=" pt-6 mb-8"
+                            className="pt-6 mb-6 md:mb-8"
                         >
-                            <h1 className="text-5xl md:text-6xl font-bold">About me</h1>
+                            <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold">About me</h1>
                         </motion.div>
 
                         {/* Text Content */}
@@ -130,7 +130,7 @@ const AboutMe = () => {
                             whileInView={{ opacity: 1, y: 0 , filter: "blur(0px)"}}
                             viewport={{ once: true, amount: 0.3 }}
                             transition={{ duration: 0.8, delay: 0.2 }}
-                            className="space-y-6 pr-5  text-[14px] md:text-lg leading-relaxed text-gray-900"
+                            className="space-y-4 md:space-y-6 pr-0 md:pr-5 text-sm sm:text-base md:text-lg leading-relaxed text-gray-900"
                         >
                             <p>
                                I’m a passionate full-stack web developer with a strong focus on building modern, responsive, and user-friendly applications. I enjoy turning ideas into real, functional products by combining clean UI design with solid backend logic. I’m especially interested in understanding how things work under the hood, which is why I prefer building features step-by-step rather than relying entirely on automation.

@@ -23,6 +23,12 @@ const Services = () => {
             description: "Building robust server-side applications and APIs. Expertise in database design, authentication, and creating scalable architectures that power your applications seamlessly.",
             skills: ["Node.js", "Express", "MongoDB", "PostgreSQL", "REST APIs", "GraphQL"]
         },
+        {
+            number: "04.",
+            title: "UI & Interaction Design",
+            description: "Designing clean, modern interfaces with smooth animations and thoughtful interactions. Focused on creating engaging user experiences that feel fast, intuitive, and visually consistent.",
+            skills: ["Tailwind CSS", "Framer Motion", "GSAP", "Responsive Design", "UX Basics"]
+        }
 
     ];
 
@@ -99,18 +105,18 @@ const Services = () => {
     };
 
     return (
-        <section className="min-h-200 bg-[#dfdfdf] py-0 md:py-15 px-6 md:px-12 lg:px-20">
-            <div className=" ">
+        <section className="min-h-screen bg-[#dfdfdf] py-16 md:py-20 px-4 sm:px-6 md:px-12 lg:px-20">
+            <div className="max-w-7xl mx-auto">
                 {/* Header */}
                 <motion.div
                     initial="hidden"
                     whileInView="visible"
                     viewport={{ once: true, amount: 0.3 }}
-                    className="mb-10 md:mb-15"
+                    className="mb-8 md:mb-12"
                 >
                     <motion.h1
                         variants={titleVariants}
-                        className="text-4xl  sm:text-4xl font-[bebas_neue] md:text-5xl lg:text-6xl font-bold mb-6 md:mb-8 tracking-tight"
+                        className="text-3xl sm:text-4xl font-[bebas_neue] md:text-5xl lg:text-6xl font-bold mb-4 md:mb-6 tracking-tight"
                         style={{ letterSpacing: '0.02em' }}
                     >
                         Services
@@ -123,7 +129,7 @@ const Services = () => {
 
                     <motion.p
                         variants={subtitleVariants}
-                        className="text-2xl project-detail sm:text-3xl md:text-4xl text-gray-600 font-light"
+                        className="text-lg sm:text-xl md:text-3xl lg:text-4xl text-gray-600 font-light"
 
                     >
                         I can help you with
@@ -147,20 +153,20 @@ const Services = () => {
                             {/* Accordion Header */}
                             <motion.button
                                 onClick={() => toggleAccordion(index)}
-                                className="w-full py-8 md:py-10 flex items-center justify-between group cursor-pointer"
+                                className="w-full py-6 md:py-8 lg:py-10 flex items-center justify-between group cursor-pointer"
                                 whileHover={{ x: 4 }}
                                 transition={{ duration: 0.3, ease: "easeOut" }}
                             >
-                                <div className="flex items-start md:items-center gap-4 md:gap-8 text-left flex-1">
+                                <div className="flex items-start md:items-center gap-3 md:gap-6 lg:gap-8 text-left flex-1">
                                     <motion.span
-                                        className="text-lg md:text-2xl font-[bebas_neue] text-gray-500 font-normal pt-1 md:pt-0 shrink-0"
+                                        className="text-base sm:text-lg md:text-2xl font-[bebas_neue] text-gray-500 font-normal pt-1 md:pt-0 shrink-0"
 
                                     >
                                         {service.number}
                                     </motion.span>
 
                                     <motion.h2
-                                        className="text-3xl font-[bebas_neue] sm:text-3xl md:text-4xl lg:text-5xl font-semibold tracking-tight"
+                                        className="text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl font-[bebas_neue] font-semibold tracking-tight"
                                         style={{
 
                                             letterSpacing: '0.02em'
@@ -175,7 +181,7 @@ const Services = () => {
                                     animate={openIndex === index ? "open" : "closed"}
                                     variants={plusVariants}
                                     transition={{ duration: 0.4, ease: [0.22, 1, 0.36, 1] }}
-                                    className="text-4xl md:text-5xl font-light shrink-0 ml-6 select-none"
+                                    className="text-3xl md:text-4xl lg:text-5xl font-light shrink-0 ml-3 md:ml-6 select-none"
                                     style={{ fontWeight: 200 }}
                                 >
                                     +
@@ -192,14 +198,14 @@ const Services = () => {
                                         variants={contentVariants}
                                         className="overflow-hidden"
                                     >
-                                        <div className="pb-10  md:pb-12">
-                                            <div className="pl-0 md:pl-24 lg:pl-32 space-y-6 md:space-y-8 pr-0 md:pr-16">
+                                        <div className="pb-8 md:pb-10 lg:pb-12">
+                                            <div className="pl-0 md:pl-16 lg:pl-24 xl:pl-32 space-y-4 md:space-y-6 lg:space-y-8 pr-0 md:pr-8 lg:pr-16">
                                                 {/* Description */}
                                                 <motion.p
                                                     initial={{ opacity: 0, y: 15 }}
                                                     animate={{ opacity: 1, y: 0 }}
                                                     transition={{ duration: 0.5, delay: 0.15 }}
-                                                    className="text-md  md:text-2xl text-gray-700 leading-relaxed max-w-4xl font-light"
+                                                    className="text-sm sm:text-base md:text-lg lg:text-xl xl:text-2xl text-gray-700 leading-relaxed max-w-4xl font-light"
                                                     style={{ lineHeight: '1.6' }}
                                                 >
                                                     {service.description}
