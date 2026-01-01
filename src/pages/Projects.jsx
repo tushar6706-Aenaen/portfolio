@@ -98,8 +98,8 @@ const Projects = () => {
             name: "College Utility Hub",
             tag: "Full-stack",
             tagline: "ALL-IN-ONE STUDENT PLATFORM",
-            description: "A comprehensive platform designed for college students to access essential utilities, resources, and tools in one centralized hub. Streamlines academic and campus life management.",
-            tech: ["React", "Express js", "Node js", "Shadcn ui", "Framer motion"],
+            description: "A comprehensive full-stack web application for managing college utilities including notices, events, lost & found items, and feedback.",
+            tech: ["React", "Express js", "Node js", "MongoDB", "Shadcn ui", "Framer motion"],
             image: col,
             imagePosition: "right",
             Project_Link:"https://col-uti-hub-fnd.vercel.app/",
@@ -243,7 +243,7 @@ const Projects = () => {
                                 {project.tech.map((tech, techIdx) => (
                                     <span
                                         key={techIdx}
-                                        className='px-3 py-1 text-xs md:text-sm hover:scale-105 transition-transform duration-300 bg-black rounded-full font-medium text-gray-200 cursor-default'>
+                                        className='px-3 py-1 text-xs md:text-sm hover:scale-105 transition-transform duration-300 border-2 border-black bg-[#dfdfdf] rounded-full font-medium text-black cursor-default'>
                                         {tech}
                                     </span>
                                 ))}
@@ -257,10 +257,10 @@ const Projects = () => {
                                 transition={{ duration: 0.6, delay: 0.8 }}
                                 className='flex gap-3 md:gap-4 flex-wrap pt-2 md:pt-4'>
                                 <a href={project.Project_Link}><button className='px-2 md:px-4 py-1 md:py-1.5 bg-black text-white rounded-4xl text-sm md:text-base font-semibold hover:bg-gray-800 transition-colors duration-300 shadow-lg'>
-                                    View Project
+                                    Live Preview
                                 </button></a>
                                <a href={project.Github_repo_link}><button className='px-2 md:px-4 py-1 md:py-1.5 border-2 border-black text-black rounded-4xl text-sm md:text-base font-semibold hover:bg-black hover:text-white transition-all duration-300'>
-                                    View Code
+                                    Github
                                 </button></a>
                             </motion.div>
                         </motion.div>

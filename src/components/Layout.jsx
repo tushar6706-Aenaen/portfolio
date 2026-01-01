@@ -1,5 +1,6 @@
 import Home from "../pages/Home"
 import Projects from "../pages/Projects"
+import Services from "../pages/Services"
 import EmailB from "./EmailB"
 import Navbar from "./Navbar"
 import { motion } from 'framer-motion'
@@ -69,6 +70,7 @@ const Layout = () => {
                 <Home />
             </motion.div>
             <Projects />
+            <Services />
         </div>
     )
 }
