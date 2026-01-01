@@ -28,7 +28,20 @@ const Services = () => {
             title: "UI & Interaction Design",
             description: "Designing clean, modern interfaces with smooth animations and thoughtful interactions. Focused on creating engaging user experiences that feel fast, intuitive, and visually consistent.",
             skills: ["Tailwind CSS", "Framer Motion", "GSAP", "Responsive Design", "UX Basics"]
+        },
+        {
+            number: "05.",
+            title: "Authentication & Authorization",
+            description: "Implementing secure authentication and authorization systems for web applications. Experienced in building login and signup flows, protecting routes, and managing user sessions using modern authentication techniques.",
+            skills: ["JWT", "HTTP-only Cookies", "Role-Based Access", "Auth Middleware", "Password Hashing"]
+        },
+        {
+            number: "06.",
+            title: "API Integration & Data Handling",
+            description: "Integrating third-party APIs and managing client-server data flow efficiently. Experienced in handling async operations, authentication flows, and structured data exchange.",
+            skills: ["REST APIs", "JWT", "Fetch API", "Axios", "Async/Await"]
         }
+
 
     ];
 
@@ -105,7 +118,7 @@ const Services = () => {
     };
 
     return (
-        <section className="min-h-screen bg-[#dfdfdf] py-16 md:py-20 px-4 sm:px-6 md:px-12 lg:px-20">
+        <section className="min-h-screen bg-[#dfdfdf] pt-10 md:py-20 px-4 sm:px-6 md:px-12 lg:px-20">
             <div className="max-w-7xl mx-auto">
                 {/* Header */}
                 <motion.div
@@ -153,7 +166,7 @@ const Services = () => {
                             {/* Accordion Header */}
                             <motion.button
                                 onClick={() => toggleAccordion(index)}
-                                className="w-full py-6 md:py-8 lg:py-10 flex items-center justify-between group cursor-pointer"
+                                className="w-full py-6 md:py-8 lg:py-8 flex items-center justify-between group cursor-pointer"
                                 whileHover={{ x: 4 }}
                                 transition={{ duration: 0.3, ease: "easeOut" }}
                             >
@@ -166,7 +179,7 @@ const Services = () => {
                                     </motion.span>
 
                                     <motion.h2
-                                        className="text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl font-[bebas_neue] font-semibold tracking-tight"
+                                        className="text-xl sm:text-2xl md:text-3xl lg:text-3xl xl:text-4xl font-[bebas_neue] font-semibold tracking-tight"
                                         style={{
 
                                             letterSpacing: '0.02em'
