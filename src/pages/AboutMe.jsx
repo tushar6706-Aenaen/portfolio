@@ -94,8 +94,8 @@ const AboutMe = () => {
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-0 h-full items-center">
                     {/* Left Side - Image with vertical border */}
                     <motion.div 
-                        initial={{ opacity: 0, x: -50 }}
-                        whileInView={{ opacity: 1, x: 0 }}
+                        initial={{ opacity: 0, y: -80 ,filter: "blur(15px)"}}
+                        whileInView={{ opacity: 1, y: 0 , filter: "blur(0px)"}}
                         viewport={{ once: true, amount: 0.3 }}
                         transition={{ duration: 0.8 }}
                         className="relative flex items-center justify-center border-r-2 border-black pr-8 md:pr-12"
@@ -115,8 +115,8 @@ const AboutMe = () => {
                     <div className="relative flex flex-col justify-center pl-8 md:pl-12 md:col-span-2">
                         {/* Title with top border */}
                         <motion.div
-                            initial={{ opacity: 0, y: 30 }}
-                            whileInView={{ opacity: 1, y: 0 }}
+                            initial={{ opacity: 0, y: -50 ,filter: "blur(15px)"}}
+                            whileInView={{ opacity: 1, y: 0 , filter: "blur(0px)"}}
                             viewport={{ once: true, amount: 0.3 }}
                             transition={{ duration: 0.8 }}
                             className=" pt-6 mb-8"
@@ -126,11 +126,11 @@ const AboutMe = () => {
 
                         {/* Text Content */}
                         <motion.div
-                            initial={{ opacity: 0, y: 30 }}
-                            whileInView={{ opacity: 1, y: 0 }}
+                            initial={{ opacity: 0, y: 50 ,filter: "blur(15px)"}}
+                            whileInView={{ opacity: 1, y: 0 , filter: "blur(0px)"}}
                             viewport={{ once: true, amount: 0.3 }}
                             transition={{ duration: 0.8, delay: 0.2 }}
-                            className="space-y-6 text-base md:text-lg leading-relaxed text-gray-900"
+                            className="space-y-6 pr-5 text-base md:text-lg leading-relaxed text-gray-900"
                         >
                             <p>
                                I’m a passionate full-stack web developer with a strong focus on building modern, responsive, and user-friendly applications. I enjoy turning ideas into real, functional products by combining clean UI design with solid backend logic. I’m especially interested in understanding how things work under the hood, which is why I prefer building features step-by-step rather than relying entirely on automation.
