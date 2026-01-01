@@ -1,5 +1,6 @@
 import Home from "../pages/Home"
 import Projects from "../pages/Projects"
+import EmailB from "./EmailB"
 import Navbar from "./Navbar"
 import {motion} from 'framer-motion'
 
@@ -22,7 +23,7 @@ const HomeMotion = {
     show :{
         opacity: 1,
         transition:{
-            delay: 1.5, // Wait for navbar animations to complete
+            delay: 1, // Wait for navbar animations to complete
             duration: 1,
         },
     }
@@ -38,6 +39,7 @@ const Layout = () => {
             >
                 <Navbar />
             </motion.div>
+            <EmailB/>
             <motion.div
                 variants={HomeMotion}
                 initial="hidden"

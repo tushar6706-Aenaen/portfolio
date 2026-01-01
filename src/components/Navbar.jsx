@@ -51,7 +51,7 @@ const navItem = {
         opacity: 1,
         y: 0,
         transition: {
-            duration: 0.5,
+            duration: 0.1,
             ease: "easeOut",
         }
     },
@@ -66,7 +66,7 @@ const connect = {
         transition: {
             duration: 0.5,
             ease: "easeOut",
-            delay: 1.5
+            delay: 1.1
         }
     },
 }
@@ -123,7 +123,7 @@ const Navbar = () => {
             variants={main}
             initial="hidden"
             animate="show"
-            className='h-20  px-10  fixed top-0 left-0 right-0 z-10 backdrop-blur-sm navbar flex justify-between items-center '
+            className='h-15  px-10  fixed top-0 left-0 right-0 z-10 backdrop-blur-sm navbar flex justify-between items-center '
         >
             {/* logo */}
             <motion.div

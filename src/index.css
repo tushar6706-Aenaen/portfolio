@@ -11,3 +11,17 @@
    font-family: "Bebas Neue",sans-serif;
   font-weight: 900;
 }
+
+
+.fintrack-img-bg{
+  box-shadow: 15px 15px 1px rgb(0, 0, 0);
+}
+.fintrack-img-bg:hover{
+  box-shadow: 15px 15px 15px rgb(0, 0, 0);
+  transition:  box-shadow 0.3s ease-in-out;
+}
+
+.connection-text{
+  font-family: "Josefin Sans" , sans-serif;
+
+}

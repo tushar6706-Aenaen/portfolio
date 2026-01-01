@@ -1,6 +1,5 @@
 import {  motion } from 'framer-motion'
 import Scene from '../components/Scene'
-import { filter } from 'motion/react-client'
 
 const main = {
     hidden: {},
@@ -8,7 +7,7 @@ const main = {
         transition:
         {
             staggerChildren: 0.3,
-            delay:1.2
+            delay:0
         }
     },
 }
@@ -25,9 +24,9 @@ const textVariants = {
         filter  : "blur(0px)",
         y: 0,
         transition: {
-            duration: 1,
+            duration: 0.7,
             ease: "easeOut",
-            delay:1.5
+            delay:1
         }
     }
 
@@ -65,14 +64,14 @@ const Home = () => {
                 <motion.div
                     initial={{ opacity: 0, y: -40 }}
                     animate={{ opacity: 1, y: 0 }}
-                    transition={{ duration: 0.7, ease: "easeOut" }} 
+                    transition={{ duration: 1, ease: "easeOut" }} 
                     className='text-6xl md:text-7xl font-bold'>
                     shaping modern
                 </motion.div>
                 <motion.div
                     initial={{ opacity: 0, y: -60 }}
                     animate={{ opacity: 1, y: 0 }}
-                    transition={{ duration: 0.7, ease: "easeOut" }}
+                    transition={{ duration: 1, ease: "easeOut" }}
                     className=' text-6xl md:text-7xl font-bold'>
                     web experiences.
                 </motion.div>
