@@ -207,7 +207,7 @@ const Projects = () => {
                                         viewport={{ once: true }}
                                         transition={{ duration: 0.5, delay: 0.4 }}
                                         whileHover={{ scale: 1.05 }}
-                                        className='px-3 md:px-4 py-1 rounded-full bg-black text-white text-xs md:text-sm font-medium shadow-lg'>
+                                        className='px-3 md:px-4 py-2 rounded-full bg-black text-white text-xs md:text-sm font-medium shadow-lg'>
                                         {project.tag}
                                     </motion.div>
                                 </div>
@@ -256,10 +256,10 @@ const Projects = () => {
                                 viewport={{ once: true }}
                                 transition={{ duration: 0.6, delay: 0.8 }}
                                 className='flex gap-3 md:gap-4 flex-wrap pt-2 md:pt-4'>
-                                <a href={project.Project_Link}><button className='px-2 md:px-4 py-1 md:py-1.5 bg-black text-white rounded-4xl text-sm md:text-base font-semibold hover:bg-gray-800 transition-colors duration-300 shadow-lg'>
+                                <a href={project.Project_Link}><button className='px-4  py-2  bg-black text-white rounded-4xl text-sm md:text-base font-semibold hover:bg-gray-800 transition-colors duration-300 shadow-lg'>
                                     Live Preview
                                 </button></a>
-                               <a href={project.Github_repo_link}><button className='px-2 md:px-4 py-1 md:py-1.5 border-2 border-black text-black rounded-4xl text-sm md:text-base font-semibold hover:bg-black hover:text-white transition-all duration-300'>
+                               <a href={project.Github_repo_link}><button className='px-4  py-2  border-2 border-black text-black rounded-4xl text-sm md:text-base font-semibold hover:bg-black hover:text-white transition-all duration-300'>
                                     Github
                                 </button></a>
                             </motion.div>

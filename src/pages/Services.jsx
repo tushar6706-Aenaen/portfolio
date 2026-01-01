@@ -15,7 +15,7 @@ const Services = () => {
             number: "02.",
             title: "Full-Stack Development",
             description: "Comprehensive web application development from front-end to back-end. Skilled in building scalable and secure applications using Node.js, Express, and databases like MongoDB and PostgreSQL.",
-            skills: ["Node.js", "Express", "MongoDB", "PostgreSQL", "REST APIs" ]
+            skills: ["Node.js", "Express", "MongoDB", "PostgreSQL", "REST APIs"]
         },
         {
             number: "03.",
@@ -23,7 +23,7 @@ const Services = () => {
             description: "Building robust server-side applications and APIs. Expertise in database design, authentication, and creating scalable architectures that power your applications seamlessly.",
             skills: ["Node.js", "Express", "MongoDB", "PostgreSQL", "REST APIs", "GraphQL"]
         },
-        
+
     ];
 
     const toggleAccordion = (index) => {
@@ -110,21 +110,21 @@ const Services = () => {
                 >
                     <motion.h1
                         variants={titleVariants}
-                        className="text-4xl sm:text-4xl md:text-5xl lg:text-6xl font-bold mb-6 md:mb-8 tracking-tight"
-                        style={{ fontFamily: 'system-ui, -apple-system, sans-serif', letterSpacing: '-0.02em' }}
+                        className="text-4xl  sm:text-4xl font-[bebas_neue] md:text-5xl lg:text-6xl font-bold mb-6 md:mb-8 tracking-tight"
+                        style={{ letterSpacing: '0.02em' }}
                     >
                         Services
                     </motion.h1>
-                    
+
                     <motion.div
                         variants={lineVariants}
                         className="h-0.5 bg-black mb-6 md:mb-8 origin-left"
                     />
-                    
+
                     <motion.p
                         variants={subtitleVariants}
-                        className="text-2xl sm:text-3xl md:text-4xl text-gray-600 font-light"
-                        style={{ fontFamily: 'system-ui, -apple-system, sans-serif' }}
+                        className="text-2xl project-detail sm:text-3xl md:text-4xl text-gray-600 font-light"
+
                     >
                         I can help you with
                     </motion.p>
@@ -152,17 +152,17 @@ const Services = () => {
                                 transition={{ duration: 0.3, ease: "easeOut" }}
                             >
                                 <div className="flex items-start md:items-center gap-4 md:gap-8 text-left flex-1">
-                                    <motion.span 
+                                    <motion.span
                                         className="text-lg md:text-2xl font-[bebas_neue] text-gray-500 font-normal pt-1 md:pt-0 shrink-0"
-                                      
+
                                     >
                                         {service.number}
                                     </motion.span>
-                                    
-                                    <motion.h2 
+
+                                    <motion.h2
                                         className="text-3xl font-[bebas_neue] sm:text-3xl md:text-4xl lg:text-5xl font-semibold tracking-tight"
-                                        style={{ 
-                                           
+                                        style={{
+
                                             letterSpacing: '0.02em'
                                         }}
                                     >
@@ -175,7 +175,7 @@ const Services = () => {
                                     animate={openIndex === index ? "open" : "closed"}
                                     variants={plusVariants}
                                     transition={{ duration: 0.4, ease: [0.22, 1, 0.36, 1] }}
-                                    className="text-4xl md:text-5xl font-light flex-shrink-0 ml-6 select-none"
+                                    className="text-4xl md:text-5xl font-light shrink-0 ml-6 select-none"
                                     style={{ fontWeight: 200 }}
                                 >
                                     +
@@ -222,8 +222,8 @@ const Services = () => {
                                                                 delay: 0.35 + skillIndex * 0.05,
                                                                 ease: "easeOut"
                                                             }}
-                                                            whileHover={{ 
-                                                                scale: 1.05, 
+                                                            whileHover={{
+                                                                scale: 1.05,
                                                                 y: -3,
                                                                 transition: { duration: 0.2 }
                                                             }}
@@ -234,8 +234,8 @@ const Services = () => {
                                                     ))}
                                                 </motion.div>
 
-                                                
-                                            
+
+
                                             </div>
                                         </div>
                                     </motion.div>
